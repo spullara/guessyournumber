@@ -1,1 +1,16 @@
 /* CSS declarations go here */
+input {
+	font-size: xx-large;
+}
+.inside {
+	margin-top: 30%;
+	text-align: center;
+	border-style: groove;
+	border-width: 10px;
+	border-color: red;
+	background-color: white;
+	padding: 10px;
+}
+body {
+	background-color: blue;	
+}

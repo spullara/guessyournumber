@@ -1,15 +1,17 @@
 <head>
-  <title>guessyournumber</title>
+  <title>Guess Your Number</title>
 </head>
 
 <body>
+<div class="inside">
   {{> start}}
+</div>
 </body>
 
 <template name="start">
   {{#unless guessing}}
   <h1>{{message}}</h1>
-  <input id="start" type="button" value="Start" />
+  <input id="start" type="button" value="{{button}}" />
   {{/unless}}
   {{#if guessing}}
     {{>guess}}
@@ -19,6 +21,6 @@
 <template name="guess">
   <h1>Is your number {{number}}?<h1>
   <input id="higher" type="button" value="Higher" />
+  <img id="gotit" src="http://www.javarants.com/bell-icon.jpg"/>
   <input id="lower" type="button" value="Lower" />
-  <input id="gotit" type="button" value="Got it!" />
 </template>
