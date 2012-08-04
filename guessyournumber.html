@@ -1,0 +1,24 @@
+<head>
+  <title>guessyournumber</title>
+</head>
+
+<body>
+  {{> start}}
+</body>
+
+<template name="start">
+  {{#unless guessing}}
+  <h1>{{message}}</h1>
+  <input id="start" type="button" value="Start" />
+  {{/unless}}
+  {{#if guessing}}
+    {{>guess}}
+  {{/if}}
+</template>
+
+<template name="guess">
+  <h1>Is your number {{number}}?<h1>
+  <input id="higher" type="button" value="Higher" />
+  <input id="lower" type="button" value="Lower" />
+  <input id="gotit" type="button" value="Got it!" />
+</template>
